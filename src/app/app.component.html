@@ -1,3 +1,9 @@
-<h1>
-  {{title}}
-</h1>
+<form class="">
+    <h3>Add Link</h3>
+    <label for="title">Title: </label>
+    <input name="title" value="" #newTitle>
+    <br>
+    <label for="link">Link: </label>
+    <input name="link" value="" #newLink>
+    <input type="button" (click)="addArticle(newTitle, newLink)" value="Submit Link">
+</form>
