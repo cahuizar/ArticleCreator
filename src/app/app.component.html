@@ -1,10 +1,12 @@
-<form class="">
-    <h3>Add Link</h3>
-    <label for="title">Title: </label>
-    <input name="title" value="" #newTitle>
-    <br>
-    <label for="link">Link: </label>
-    <input name="link" value="" #newLink>
-    <input type="button" (click)="addArticle(newTitle, newLink)" value="Submit Link">
-</form>
-<app-article *ngFor="let article of articles" [article]="article"></app-article>
+<div class="container">
+  <form class="">
+      <h3>Add Link</h3>
+      <label for="title">Title: </label>
+      <input name="title" value="" #newTitle>
+      <br>
+      <label for="link">Link: </label>
+      <input name="link" value="" #newLink>
+      <input type="button" (click)="addArticle(newTitle, newLink)" value="Submit Link">
+  </form>
+  <app-article *ngFor="let article of sortedArticles()" [article]="article"></app-article>
+</div>

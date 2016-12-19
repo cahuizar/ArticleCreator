@@ -7,6 +7,7 @@
 <a href="{{ article.link }}">
     {{article.title}}
 </a>
+<div class="meta">({{ article.domain() }})</div>
 <ul>
     <li class="item">
         <a href (click)="voteUp()">
